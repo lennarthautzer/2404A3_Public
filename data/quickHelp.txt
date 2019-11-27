@@ -1,0 +1,74 @@
+Add:
+  Recording:
+    add -r recording_id "title" "artist" "producer" year
+  Song:
+    add -s song_id "title" "composer"
+  Track:
+    add -t track_id album_id song_id track_number
+    add -t track_id album_id song_id
+    add -t track_id none song_id
+    add -t ? album_id song_id
+  User:
+    add -u user_id "name"
+  Playlist:
+    add -p user_id "playlist_name"
+  Track to Playlist:
+    add -l user_id "playlist_name" track_id
+
+Delete:
+  Recording:
+    delete -r recording_id
+  Song:
+    delete -s song_id
+  Track:
+    delete -t track_id
+    delete -s track_id -p "playlist_name" -u user_id
+    delete -t track_id -p "playlist_name" -u user_id
+    delete -Global 1 -s track_id -p "playlist_name" -u user_id
+    delete -Global 1 -t track_id -p "playlist_name" -u user_id
+  User:
+    delete -u user_id
+  Playlist:
+    delete -p "playlist_name" -u user_id
+
+Show:
+  Recordings:
+    show recordings
+  Songs:
+    show songs
+    show songs -u user_id -p "playlist_name"
+  Tracks:
+    show tracks
+  Users:
+    show users
+  Playlists:
+    show playlists -u user_id
+
+Dot:
+  Quit:
+    .quit
+  Read:
+    .read "File Name as it appears in /data/ directory.txt"
+  Log:
+    .log clear
+    .log start
+    .log start_output
+    .log start_both
+    .log stop
+    .log save filename
+    .log show 
+  Help:
+    .help
+    .quickhelp
+  Display SQL Information:
+    .sql
+
+Developer:
+  Trim:
+    .trim "string_to_trim"
+  Starts With:
+    .startsWith "main_string" "prefix_string"
+  Ends With:
+    .endsWith "main_string" "suffix_string"
+  To Title Case:
+    .toTitleCase "string_to_change"

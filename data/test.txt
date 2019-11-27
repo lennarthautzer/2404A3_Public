@@ -1,0 +1,76 @@
+//ADD SONGS
+
+add -s 100 "Jimbo Went To Town" "John and Jimbo"
+add -s 101 "Jimbo Went To School" "Jimbo"
+add -s 102 "Jimbo Went To Church" "John"
+add -s 103 "Jimbo Went To The Spa" "John and Jimbo"
+add -s 104 "Jimbo Went To The Club" "Jimbo"
+add -s 105 "Jimbo Went To The Pool" "John"
+add -s 106 "Jimbo Went To His Auntie's" "Jimbo"
+add -s 107 "Jimbo Went To The City" "John and Jimbo"
+add -s 108 "Jimbo Went To Work" "John and Jimbo"
+add -s 109 "Jimbo Went To The Car" "John and Jimbo"
+
+//ADD RECORDINGS
+
+add -r 1000 "Jimbo and the Boys" "Jimbo, The Boys" "The Boys and Jimbo" 1992
+add -r 2000 "Jimbo and the Girls" "Jimbo, The Girls" "The Girls and Jimbo" 1994
+add -r 3000 "Jimbo and the Lads" "Jimbo, The Lads" "The Lads and Jimbo" 1997
+
+//ADD TRACKS
+
+add -t 10 1000 100 0 //Inline commenting works!
+add -t 11 1000 101 1
+add -t 12 1000 102 2
+add -t 13 1000 103 3
+add -t 14 2000 104 0
+add -t 15 2000 105 1
+add -t 16 2000 106 2
+add -t 17 3000 107 0
+add -t 18 3000 108 1
+add -t 19 3000 109 2
+
+//ADD USERS
+
+add -u 10000 "Chris Baggins"
+add -u 10001 "Artyom Baggins"
+add -u 10002 "Fred Baggins"
+
+//ADD PLAYLISTS
+
+add -p 10000 "My Tunes Rock Hard"
+add -p 10000 "My Tunes Are Hard Rock"
+add -p 10000 "My Songs Are the Hardest"
+add -p 10001 "Tunes Are Hard"
+add -p 10001 "The Hardest Tunes In The Yard"
+add -p 10002 "Fred's Songzzzz"
+
+//ADD TRACKS TO PLAYLISTS
+
+add -l 10000 "My Tunes Rock Hard" 10
+add -l 10000 "My Tunes Rock Hard" 19
+add -l 10000 "My Tunes Rock Hard" 12
+add -l 10000 "My Tunes Are Hard Rock" 11
+add -l 10000 "My Tunes Are Hard Rock" 18
+add -l 10000 "My Tunes Are Hard Rock" 16
+add -l 10000 "My Songs Are The Hardest" 11
+add -l 10000 "My Songs Are The Hardest" 12
+add -l 10000 "My Songs Are The Hardest" 13
+add -l 10000 "My Songs Are The Hardest" 14
+add -l 10001 "Tunes Are Hard" 10
+add -l 10001 "Tunes Are Hard" 12
+add -l 10001 "Tunes Are Hard" 14
+add -l 10001 "Tunes Are Hard" 16
+add -l 10001 "The Hardest Tunes In The Yard" 18
+add -l 10001 "The Hardest Tunes In The Yard" 17
+add -l 10002 "Fred's Songzzzz" 20
+add -l 10002 "Fred's Songzzzz" 19
+add -l 10002 "Fred's Songzzzz" 18
+add -l 10002 "Fred's Songzzzz" 17
+add -l 10002 "Fred's Songzzzz" 16
+add -l 10002 "Fred's Songzzzz" 15
+add -l 10002 "Fred's Songzzzz" 14
+add -l 10002 "Fred's Songzzzz" 13
+add -l 10002 "Fred's Songzzzz" 12
+add -l 10002 "Fred's Songzzzz" 11
+add -l 10002 "Fred's Songzzzz" 10
